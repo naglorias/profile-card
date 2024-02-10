@@ -17,7 +17,6 @@ body {
   background-repeat: no-repeat , no-repeat;
   background-position: -120px -280px , 800px 450px;
   background-size: 800px , 800px;
-  padding:2rem;
 }
 
 .card{
@@ -116,14 +115,26 @@ body {
         background: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg),var(--primary1);
         background-repeat: no-repeat , no-repeat;
         background-size: 600px , 600px;
-        background-position: -300px -300px , 300px 400px;
+        background-position: -200px -300px , 300px 700px;
         
+    }
+    .card{
+        margin-top: 15rem;
     }
 }
 
-
 @media screen and (max-width: 600px) {
+
+    body{
+        background: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg),var(--primary1);
+        background-repeat: no-repeat , no-repeat;
+        background-size: 600px , 600px;
+        background-position: -400px -300px , 150px 520px;
+        
+       
+    }
     .card{
-        width: 24rem;
+        width: 21rem;
+        
     }
 }
