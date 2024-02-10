@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary1: hsl(185, 75%, 39%); /* Dark cyan */
+  --primary2: hsl(229, 23%, 23%); /* Very dark desaturated blue  */
+  --primary3: hsl(227, 10%, 46%); /* Dark grayish blue  */
+  --neutral1: hsl(0, 0%, 59%); /* Dark gray */
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg),var(--primary1);
+  background-repeat: no-repeat , no-repeat;
+  background-position: -120px -280px , 800px 450px;
+  background-size: 800px , 800px;
+}
+
+.card{
+    width: 27rem;
+    height: 27rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    left:50%;
+    top:20%;
+    transform: translateX(-50%);
+}
+.pattern{
+    flex:2;
+    background-image: url(./images/bg-pattern-card.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.info{
+    flex:2;
+    background-color: #fff;
+    text-align: center;
+}
+
+.info .name{
+   font-size: 1.125rem;
+   color:var(--primary2);
+   margin-top: 3.3rem;
+}
+.info .name span{
+    color:var(--primary3);
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.location{
+    color:var(--primary3);
+}
+.stats{
+    flex:1.1;
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 1px solid #ccc;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.followers,.photos,.likes{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.125rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.followers span:first-child,
+.photos span:first-child,
+.likes span:first-child{
+    color: var(--primary2);
+    font-weight: 700;
+}
+
+.followers span:nth-child(2),
+.photos span:nth-child(2),
+.likes span:nth-child(2){
+    color: var(--neutral1);
+    font-weight: 400;
+    font-size: .88rem;
+}
+
+@media screen and (max-width: 992px) {
+    body{
+        background: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg),var(--primary1);
+        background-repeat: no-repeat , no-repeat;
+        background-size: 600px , 600px;
+        background-position: -220px -130px , 500px 400px;
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        background: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg),var(--primary1);
+        background-repeat: no-repeat , no-repeat;
+        background-size: 600px , 600px;
+        background-position: -300px -300px , 300px 400px;
+        
+    }
+}
