@@ -17,6 +17,7 @@ body {
   background-repeat: no-repeat , no-repeat;
   background-position: -120px -280px , 800px 450px;
   background-size: 800px , 800px;
+  padding:2rem;
 }
 
 .card{
